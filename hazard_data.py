@@ -6,17 +6,11 @@ df = pd.read_csv('HazardousDrivingAreas.csv')
 
 def get_area(lat, lng, num=50):
     distance_threshold = 0.05
-    reduced_df = df.loc[(df.Latitude-lat)**2 + (df.Longitude-lng)**2 <= distance_threshold**2]
-    print(reduced_df)
+    nearby_df = df.loc[(df.Latitude-lat)**2 + (df.Longitude-lng)**2 <= distance_threshold**2]
 
-    return reduced_df
-    # compute distance using Pythagoras
-    #sorted_df = ((df.Latitude-lat)**2 + (df.Longitude-lng)**2).sort_values()[:num]
-    #a = sorted_df.index.values.tolist()
+    #print(nearby_df)
 
-    #print(a)
-    #reduced_df2 = df.loc(a) # todo: make this work
-    #print(reduced_df2)
+    return nearby_df
 
 
 def areas_to_avoid():
@@ -34,5 +28,5 @@ def areas_to_avoid():
 #print(df)
 #print(df.Latitude)
 
-get_area(43.7,-79.5)
+#get_area(43.7,-79.5)
 #areas_to_avoid()
