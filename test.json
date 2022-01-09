@@ -1,0 +1,37 @@
+[{
+  "level": 1,
+  "shape": [
+    {
+      "latitude": 47.555,
+      "longitude": 79.443
+    },
+    {
+      "latitude": 47.565,
+      "longitude": 79.443
+    },
+    {
+      "latitude": 47.555,
+      "longitude": 79.473
+    }
+
+  ]
+},
+  {
+  "level": 2,
+  "shape": [
+    {
+      "latitude": 43.655,
+      "longitude": -79.543
+    },
+    {
+      "latitude": 43.665,
+      "longitude": 79.543
+    },
+    {
+      "latitude": 43.655,
+      "longitude": 79.573
+    }
+
+  ]
+}
+]
