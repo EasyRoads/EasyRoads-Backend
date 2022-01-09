@@ -14,7 +14,7 @@ def get_area(lat, lng, num=50):
 
 
 def areas_to_avoid():
-    # todo figure out a threshold value for places to avoid
+    # todo figure out a good threshold value for places to avoid
     severity_threshold = 0.02
     incidents_threshold = 5
     reduced_df = df.loc[df['SeverityScore'] >= severity_threshold]
